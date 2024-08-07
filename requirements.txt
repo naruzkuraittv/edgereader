@@ -1,0 +1,5 @@
+pyperclip
+fpdf2
+pyautogui
+keyboard
+clipboard
