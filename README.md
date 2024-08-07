@@ -8,6 +8,10 @@ with requirements.txt run
 ```
 pip install -r requirements.txt
 ```
+if that doesnt work try
+```
+python -m pip install -r requirements.txt
+```
 then 
 ```
 edgereader.py
