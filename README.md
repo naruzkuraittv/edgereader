@@ -6,7 +6,7 @@ my eyes hurt when i read stuff. and microsoft edge's pdf reader is realy good on
 
 # setup
 
-- open powershell in the directory where u downloaded this.
+- open powershell in the directory where u downloaded and extracted this.
 - run this command to install dependenceis
 ```
 pip install -r requirements.txt
