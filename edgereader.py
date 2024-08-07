@@ -9,12 +9,11 @@ import clipboard
 import pyautogui
 import threading
 import queue
+import os
 cmd_queue = queue.Queue()
-### run pip install -r requirements.txt to auto install the stuff
-#i made this like a year before i put this on github and low key i forgot what i did how i did it.
-#i like Aria english at fast speed and it should auto create a pdf and sometimes starts it. even if you never started edge itll start edge for you.
 
 PDF_PATH = "C:/temp/temp_voice_reader.pdf"
+PDF_FOLDER = "C:/temp"
 EDGE_PATH = r"C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 
 
@@ -22,8 +21,21 @@ print("---- Usage Guide ----")
 print("Ctrl+Alt+Shift+R: Open clipboard content as a PDF in Edge and activate reader mode.")
 print("Ctrl+Alt+Shift+F: Clean and format the clipboard content, then create a PDF.")
 print("---------------------")
-print("PSA YOU FORGET SHIT, copy something for this script to start\n then f to format and r to read")
-print("dont fprget to love yourself <3")
+print("PSA YOU FORGET SHIT, copy something for this script to start\n modifiers are Ctrl + Alt + Shift \n keys with modifiers are f to format and r to read")
+print("dont forget to love yourself <3")
+
+pdf = FPDF()
+#create pdf folder if not exist
+if not os.path.exists(PDF_FOLDER):
+    os.makedirs(PDF_FOLDER)
+#create pdf if not exist
+PDF_PATH = "C:/temp/temp_voice_reader.pdf"
+# Create an empty PDF if it doesn't exist
+if not os.path.exists(PDF_PATH):
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.output(PDF_PATH, 'F')
+
 
 def command_worker():
     while True:
