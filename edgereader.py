@@ -24,6 +24,7 @@ print("---------------------")
 print("PSA YOU FORGET SHIT, copy something for this script to start\n modifiers are Ctrl + Alt + Shift \n keys with modifiers are f to format and r to read")
 print("dont forget to love yourself <3")
 
+
 pdf = FPDF()
 #create pdf folder if not exist
 if not os.path.exists(PDF_FOLDER):
@@ -73,9 +74,11 @@ def open_pdf_in_edge():
         print("New clipboard data")
         create_pdf(cb_check)
         live_cb = cb_check
+        subprocess.Popen([EDGE_PATH, PDF_PATH])
     else:
         print("No new clipboard data")
-    subprocess.Popen([EDGE_PATH, PDF_PATH])
+        subprocess.Popen([EDGE_PATH, PDF_PATH])
+    
     time.sleep(0.5)  # Wait for Edge to open
     #activate_edge_reader()
     pyautogui.hotkey("ctrl", "shift", "u")
