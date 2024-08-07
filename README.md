@@ -14,6 +14,15 @@ python -m pip install -r requirements.txt
 ```
 then 
 ```
-edgereader.py
+py edgereader.py
 ```
+or 
+```
+python3 edgereader.py
+```
+or 
+```
+python edgereader.py
+```
+
 when you are done close out of the window
