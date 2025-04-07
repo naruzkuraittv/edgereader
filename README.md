@@ -1,17 +1,17 @@
-# edgereader
-my eyes hurt when i read stuff. and microsoft edge's pdf reader is realy good on windows. too bad the linux version doesnt have it QwQ
+# edgereader.py
+My eyes hurt when I read stuff, and Microsoft Edge's PDF reader is excellent on Windows. Too bad the Linux version doesn't have it QwQ
 
 
 
 
 # setup
 
-- open powershell in the directory where u downloaded and extracted this.
+- Open powershell in the directory where u downloaded and extracted this.
 - run this command to install dependenceis
 ```
 pip install -r requirements.txt
 ```
-- if that doesnt work try
+- If that doesn't work, try
 ```
 python -m pip install -r requirements.txt
 ```
@@ -19,7 +19,7 @@ python -m pip install -r requirements.txt
 
 
 
-# how to start
+# How to start
 in the same folder that u ran the installer command run
 ```
 py edgereader.py
@@ -39,10 +39,12 @@ python edgereader.py
 
 copy stuff
 then run ctrl + alt + shift + r 
-it will take whatever is on your clipboard create a pdf 
+It will take whatever is on your clipboard and create a pdf 
 
-if you dont have edge reader enabled you might need to use ctrl + shift + u to auto read for the first time
-i like it the reading thing to be on fast.
-you can make it faster or slower by going to voice options on the top right and changing the slider or the speaker
+If you don't have Edge Reader enabled, you might need to use ctrl + shift + u to auto-read for the first time
+I like it when the reading thing is on fast.
+You can make it faster or slower by going to voice options on the top right and changing the slider or the speaker.
 
-when you are done close the powershell window
+When you are done, close the Powershell window.
+
+
